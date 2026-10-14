@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this data or code, please cite the paper and this archive."
+title: "Data and code for: Strategic placement of restoration structures increases wind erosion control in drylands"
+authors:
+  - family-names: Tiwari
+    given-names: Shubham
+  - family-names: Edwards
+    given-names: Brandon L.
+  - family-names: Young
+    given-names: Kristina E.
+  - family-names: Duniway
+    given-names: Michael C.
+  - family-names: Webb
+    given-names: Nicholas P.
+version: 1.0.0
+license: CC-BY-4.0
+repository-code: "https://github.com/shubhamrt/ConMod_Placement"
+keywords:
+  - wind erosion
+  - AERO
+  - restoration structures
+  - drylands
+  - Landscape Data Commons

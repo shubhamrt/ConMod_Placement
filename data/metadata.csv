@@ -1,0 +1,38 @@
+file,column,units,description
+study_plots.csv,plot_id,,Plot id used in this study (grass_0001 to shrub_0500)
+study_plots.csv,PrimaryKey,,Landscape Data Commons PrimaryKey of the AIM plot visit
+study_plots.csv,veg_type,,"Vegetation type from first-hit cover: grass (graminoid >= 30%, shrub < 10%), shrub (shrub >= 20%, graminoid < 15%), mixed (graminoid >= 15%, shrub > 10%)"
+study_plots.csv,longitude,decimal degrees,Plot longitude (NAD83)
+study_plots.csv,latitude,decimal degrees,Plot latitude (NAD83)
+study_plots.csv,bare_soil_pct,%,Bare soil cover (LDC indicator BareSoil)
+study_plots.csv,foliar_cover_pct,%,Total foliar cover (LDC indicator TotalFoliarCover)
+study_plots.csv,large_gap_cover_pct,%,Percent of transect in canopy gaps longer than 100 cm (GapCover_101_200 + GapCover_200_plus)
+study_plots.csv,veg_height_cm,cm,"Mean vegetation height: graminoid height for grass, woody height for shrub, mean of both for mixed plots"
+study_plots.csv,n_transect_lines,,Number of line-point intercept transects with canopy gap records
+study_plots.csv,transect_length_m,m,Total transect length (sum of LineLengthAmount); used to convert structures per ha to structures per plot
+study_plots.csv,n_canopy_gaps,,Number of canopy gaps recorded in the LDC gap table
+study_plots.csv,n_gaps_measured_height,,Number of canopy gaps with a measured plant height at a gap edge
+study_plots.csv,mean_gap_length_m,m,Mean canopy gap length
+study_plots.csv,mean_scaled_gap,,Mean of gap length / bordering vegetation height over the canopy gaps of the plot
+study_plots.csv,sensitivity_group,,"Initial flux tertile (low, mid, high at 16 m/s) for the 90 plots used in the parameter sensitivity runs; empty for other plots"
+baseline_flux.csv,plot_id,,Plot id
+baseline_flux.csv,veg_type,,Vegetation type
+baseline_flux.csv,wind_speed,m s-1,Wind speed used in AERO (8 12 16 or 20)
+baseline_flux.csv,hflux_gmd,g m-1 d-1,Modeled horizontal sediment flux without structures
+placement_flux.csv,plot_id,,Plot id
+placement_flux.csv,veg_type,,Vegetation type
+placement_flux.csv,strategy,,"Placement strategy: largest_gap, scaled_gap, proportional or cell_grid"
+placement_flux.csv,density_ha,structures ha-1,Prescribed structure density (100 250 500 1000 2000 or 4000)
+placement_flux.csv,wind_speed,m s-1,Wind speed used in AERO
+placement_flux.csv,n_structures,,Number of structures deployed on the plot transect
+placement_flux.csv,n_placed,,Number of structures that could be placed without creating a sub-gap shorter than 0.25 m
+placement_flux.csv,hflux_gmd,g m-1 d-1,Modeled horizontal sediment flux with structures. Runs where AERO returned no value are not listed
+sensitivity_flux.csv,param_set,,"AERO parameter set: median (Edwards et al. 2022 posterior medians), rlo/rhi = r (KAWAMURA_51_EFOLD) 4.89/7.19, philo/phihi = phi at l=0 (KAWAMURA_51_SSR0) 0.08/0.31, gamma_lo/gamma_hi = cohesion 0.00028/0.00045"
+sensitivity_flux.csv,plot_id,,Plot id (90-plot subsample)
+sensitivity_flux.csv,veg_type,,Vegetation type
+sensitivity_flux.csv,strategy,,"baseline (no structures) or placement strategy"
+sensitivity_flux.csv,density_ha,structures ha-1,"Prescribed structure density (100 250 1000 or 2000), 0 for baseline"
+sensitivity_flux.csv,wind_speed,m s-1,Wind speed used in AERO (12 16 or 20)
+sensitivity_flux.csv,hflux_gmd,g m-1 d-1,Modeled horizontal sediment flux
+map_background_plots.csv,longitude,decimal degrees,Longitude of all unique AIM plot locations in the study region (Figure 2 background)
+map_background_plots.csv,latitude,decimal degrees,Latitude of all unique AIM plot locations in the study region
